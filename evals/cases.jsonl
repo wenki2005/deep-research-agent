@@ -1,0 +1,12 @@
+# 评估用例集：每行一个 JSON。字段说明：
+#   question           研究问题
+#   tags               标签，用于 --tags 过滤
+#   expected_keywords  期望报告中出现的关键词（信息性，不判失败）
+{"question": "ai岗位现状", "tags": ["short", "career"], "expected_keywords": []}
+{"question": "什么是强化学习", "tags": ["basic"], "expected_keywords": ["强化学习"]}
+{"question": "2026年开源大语言模型的发展趋势", "tags": ["tech"], "expected_keywords": ["开源"]}
+{"question": "人工智能在医疗诊断领域的最新进展", "tags": ["tech", "medical"], "expected_keywords": ["医疗"]}
+{"question": "新能源汽车行业的竞争格局", "tags": ["industry"], "expected_keywords": []}
+{"question": "量子计算在金融领域的应用前景", "tags": ["tech", "finance"], "expected_keywords": []}
+{"question": "2026年全球旅游市场复苏情况", "tags": ["industry"], "expected_keywords": []}
+{"question": "大语言模型的安全对齐研究进展", "tags": ["tech", "safety"], "expected_keywords": ["安全"]}

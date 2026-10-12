@@ -1,0 +1,11 @@
+# Active monitoring configuration. Copy to monitor.yaml and edit.
+name: ai-job-market
+question: "2026年人工智能岗位市场的最新变化"
+schedule: "weekly"
+provider: local
+max_queries: 3
+use_memory: true
+export_pdf: true
+tags:
+  - jobs
+  - ai

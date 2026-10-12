@@ -1,0 +1,25 @@
+{
+  "name": "deep-research",
+  "version": "1.0.0",
+  "description": "Evidence-oriented multi-agent research skill backed by the local Deep Research Agent project.",
+  "author": {
+    "name": "Deep Research Agent"
+  },
+  "license": "MIT",
+  "keywords": ["research", "fact-checking", "multi-agent", "evidence"],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Deep Research Agent",
+    "shortDescription": "Evidence-oriented multi-agent web research",
+    "longDescription": "Run current web research with planning, parallel investigators, evidence status, source quality signals, and Markdown/PDF reports.",
+    "developerName": "Deep Research Agent",
+    "category": "Productivity",
+    "capabilities": ["Research", "Interactive", "Write"],
+    "defaultPrompt": [
+      "Research this topic with current sources and evidence.",
+      "Build a timeline and separate confirmed facts from rumors.",
+      "Compare recent industry reports and cite the evidence."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

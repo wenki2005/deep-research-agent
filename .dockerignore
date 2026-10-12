@@ -1,0 +1,15 @@
+.git
+.venv
+.pytest_cache
+.ruff_cache
+__pycache__
+*.pyc
+.env
+memory
+reports
+*.pdf
+*.md
+!README.md
+!docs/ARCHITECTURE.md
+!evals/README.md
+!codex-skill/deep-research/SKILL.md

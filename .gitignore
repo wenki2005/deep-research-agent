@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Env & secrets
+.env
+
+# Reports & caches
+reports/*.md
+reports/*.pdf
+memory/
+*.db
+.pytest_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated evaluation outputs and local research artifacts
+evals/results/
+docs/audit-*.json
+docs/search-smoke-*.json

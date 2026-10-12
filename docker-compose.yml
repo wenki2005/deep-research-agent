@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Ollama runs on the host; host.docker.internal works on Docker Desktop.
+      LOCAL_BASE_URL: http://host.docker.internal:11434/v1
+      LOCAL_MODEL: qwen3:4b
+    volumes:
+      - ./reports:/app/reports
+      - ./memory:/app/memory
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
